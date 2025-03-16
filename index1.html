@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Phobia Detector</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #0a192f, #1e3c72);
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background: #007acc;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .navbar .logo {
+            font-weight: bold;
+            font-size: 22px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Signup Form */
+        .signup-container {
+            width: 80%;
+            max-width: 400px;
+            background: #112240;
+            padding: 20px;
+            margin: 50px auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #64ffda;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #64ffda;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #64ffda;
+            border-radius: 5px;
+            background: #0a192f;
+            color: #64ffda;
+            font-size: 16px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #007acc;
+        }
+
+        /* Buttons */
+        .signup-btn {
+            width: 100%;
+            padding: 12px;
+            background: #007acc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .signup-btn:hover {
+            background: #005f99;
+        }
+
+        .login-link {
+            display: block;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #64ffda;
+        }
+
+        .login-link a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">🧠 Emotion Mirror  </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="signup-btn">Create Account</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="#">Sign In</a></p>
+    </div>
+
+</body>
+</html>
